@@ -30,7 +30,7 @@
 %\usetheme{Berkeley}
 %\usetheme{Berlin}
 %\usetheme{Boadilla}
-\usetheme{CambridgeUS}
+%\usetheme{CambridgeUS}
 %\usetheme{Copenhagen}
 %\usetheme{Darmstadt}
 %\usetheme{Dresden}
@@ -40,7 +40,7 @@
 %\usetheme{Ilmenau}
 %\usetheme{JuanLesPins}
 %\usetheme{Luebeck}
-%\usetheme{Madrid}
+\usetheme{Madrid}
 %\usetheme{Malmoe}
 %\usetheme{Marburg}
 %\usetheme{Montpellier}
@@ -56,7 +56,7 @@
 % changes the colors of your current slide theme.
 
 %\usecolortheme{albatross}
-%\usecolortheme{beaver}
+\usecolortheme{beaver}
 %\usecolortheme{beetle}
 %\usecolortheme{crane}
 %\usecolortheme{dolphin}
@@ -83,12 +83,13 @@
 %	TITLE PAGE
 %----------------------------------------------------------------------------------------
 
-\title[Ph.D, Thesis Defence]{Computational Modeling and Structural Bioinformatics Studies on Cardiovascular Disorder Associated Proteins and Identification \& Design of Potential Therapeutic Agents} % The short title appears at the bottom of every slide, the full title is only on the title page
+\title[PhD Oral Defense]{Computational Modeling and Structural Bioinformatics Studies on Cardiovascular Disorder Associated Proteins and Identification \& Design of Potential Therapeutic Agents} % The short title appears at the bottom of every slide, the full title is only on the title page
 
-\author{Sudha Bhagwati} % Your name
-\institute[JNU] % Your institution as it will appear on the bottom of every slide, may be shorthand to save space
+\author{\textbf{Sudha Bhagwati}} % Your name
+\institute[CSIR-CDRI, JNU] % Your institution as it will appear on the bottom of every slide, may be shorthand to save space
 {
-CSIR-Central Drug Research Institute \\ % Your institution for the title page
+\small \textbf{Supervisor:}  Dr. Mohammad Imran Siddiqi (\emph{Sr. Principal Scientist}) \\ \vspace{0.5cm}
+\small CSIR-Central Drug Research Institute \\ % Your institution for the title page
 \medskip
 Jawaharlal Nehru University, New Delhi \\ % Your institution for the title page
 \medskip
@@ -97,7 +98,7 @@ Jawaharlal Nehru University, New Delhi \\ % Your institution for the title page
 \date{\today} % Date, can be changed to a custom date
 
 \begin{document}
-
+\setbeamertemplate{caption}{\raggedright\insertcaption\par}
 \begin{frame}
 \titlepage % Print the title page as the first slide
 \end{frame}
@@ -108,180 +109,975 @@ Jawaharlal Nehru University, New Delhi \\ % Your institution for the title page
 \end{frame}
 
 %----------------------------------------------------------------------------------------
-%	PRESENTATION SLIDES
+%	PRESENTATION SLIDES START
 %----------------------------------------------------------------------------------------
 
-%------------------------------------------------
-\section{Introduction} % Sections can be created in order to organize your presentation into discrete blocks, all sections and subsections are automatically printed in the table of contents as an overview of the talk
-%------------------------------------------------
-
-%\subsection{subsection} % A subsection can be created just before a set of slides with a common theme to further break down your presentation into chunks
+\section{Introduction}
 
 \begin{frame}
-\frametitle{Paragraphs of Text}
-\begin{itemize}
-\item Cardiovascular diseases (CVDs) are disorders of the heart and blood vessels and include coronary heart disease, cerebrovascular disease, rheumatic heart disease and other conditions. 
-
-\item An estimated 17.9 million people died from CVDs in 2016, representing 31\% of all global deaths. Of these deaths, 85\% are due to heart attack and stroke.
-
-\item Four out of five CVD deaths are due to heart attacks and strokes. Individuals at risk of CVD may demonstrate raised blood pressure, glucose, and lipids as well as overweight and obesity.
-
-\item Risk factors- tobacco use, unhealthy diet and obesity, physical inactivity and alcohol consumption.
-
-\end{itemize}
+\begin{block}
+\Huge{\centerline{Introduction}}
+\end{block}
 \end{frame}
 
-%------------------------------------------------
-
 \begin{frame}
+\frametitle{\textbf{Cardiovascular disorders}}
 \begin{figure}
-\includegraphics[scale=0.5]{defence presentation/1.png}
-\caption{WHO global health estimates 2014}
+\includegraphics[scale=0.45]{images/Picture1.png}
+%\caption{WHO global health estimates 2014}
 \end{figure}
 \end{frame}
 
-%------------------------------------------------
-
 \begin{frame}
-\frametitle{Bullet Points}
-\begin{itemize}
-\item Lorem ipsum dolor sit amet, consectetur adipiscing elit
-\item Aliquam blandit faucibus nisi, sit amet dapibus enim tempus eu
-\item Nulla commodo, erat quis gravida posuere, elit lacus lobortis est, quis porttitor odio mauris at libero
-\item Nam cursus est eget velit posuere pellentesque
-\item Vestibulum faucibus velit a augue condimentum quis convallis nulla gravida
-\end{itemize}
+\frametitle{\textbf{CVD, a major cause of death worldwide}}
+\begin{figure}
+\includegraphics[scale=0.45]{images/Picture2.png}
+%\caption{WHO global health estimates 2014}
+\end{figure}
 \end{frame}
 
-%------------------------------------------------
-
 \begin{frame}
-\frametitle{Blocks of Highlighted Text}
-\begin{block}{Block 1}
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lectus nisl, ultricies in feugiat rutrum, porttitor sit amet augue. Aliquam ut tortor mauris. Sed volutpat ante purus, quis accumsan dolor.
-\end{block}
-
-\begin{block}{Block 2}
-Pellentesque sed tellus purus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vestibulum quis magna at risus dictum tempor eu vitae velit.
-\end{block}
-
-\begin{block}{Block 3}
-Suspendisse tincidunt sagittis gravida. Curabitur condimentum, enim sed venenatis rutrum, ipsum neque consectetur orci, sed blandit justo nisi ac lacus.
-\end{block}
+\frametitle{\textbf{Number of deaths by cause, World 2017}}
+\begin{figure}
+\includegraphics[scale=0.44]{images/Picture3.png}
+%\caption{WHO global health estimates 2014}
+\end{figure}
 \end{frame}
 
-%------------------------------------------------
+\begin{frame}
+\frametitle{\textbf{Incidences worldwide}}
+\begin{figure}
+\includegraphics[scale=0.40]{images/Picture4.png}
+%\caption{WHO global health estimates 2014}
+\end{figure}
+\end{frame}
 
 \begin{frame}
-\frametitle{Multiple Columns}
-\begin{columns}[c] % The "c" option specifies centered vertical alignment while the "t" option is used for top vertical alignment
-
-\column{.45\textwidth} % Left column and width
-\textbf{Heading}
-\begin{enumerate}
-\item Statement
-\item Explanation
-\item Example
-\end{enumerate}
-
+\frametitle{\textbf{Incidences in India}}
+\begin{columns}[c] 
+\column{.5\textwidth} % Left column and width
+\begin{figure}
+\includegraphics[width=\textwidth]{images/Picture5.png}
+\caption{\tiny Ref: Prabhakaran et al., Circulation 2016}
+\end{figure}
+%\begin{itemize}
+%\item whetever 
+%\item whetever
+%\end{itemize}
 \column{.5\textwidth} % Right column and width
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lectus nisl, ultricies in feugiat rutrum, porttitor sit amet augue. Aliquam ut tortor mauris. Sed volutpat ante purus, quis accumsan dolor.
-
+\begin{figure}
+\includegraphics[width=\textwidth]{images/Picture6.png}
+\caption{\tiny Ref: Kearney et al., The Lancet 2005}
+\end{figure}
 \end{columns}
 \end{frame}
 
-%------------------------------------------------
-\section{State of art}
-%------------------------------------------------
 
-%------------------------------------------------
-\section{Methodology}
-%------------------------------------------------
 
-%------------------------------------------------
-\section{Results}
-%------------------------------------------------
 
-%------------------------------------------------
-\section{Conclusion}
-%------------------------------------------------
+
+\section{Motivation}
 
 \begin{frame}
-\frametitle{Table}
-\begin{table}
-\begin{tabular}{l l l}
-\toprule
-\textbf{Treatments} & \textbf{Response 1} & \textbf{Response 2}\\
-\midrule
-Treatment 1 & 0.0003262 & 0.562 \\
-Treatment 2 & 0.0015681 & 0.910 \\
-Treatment 3 & 0.0009271 & 0.296 \\
-\bottomrule
-\end{tabular}
-\caption{Table caption}
-\end{table}
+\begin{block}
+\Huge{\centerline{Motivation}}
+\end{block}
 \end{frame}
 
-%------------------------------------------------
-
 \begin{frame}
-\frametitle{Theorem}
-\begin{theorem}[Mass--energy equivalence]
-$E = mc^2$
-\end{theorem}
+\frametitle{\textbf{Motivation of study}}
+\begin{figure}
+\includegraphics[scale=0.75]{images/Picture7.png}
+%\caption{WHO global health estimates 2014}
+\end{figure}
 \end{frame}
 
-%------------------------------------------------
-
-\begin{frame}[fragile] % Need to use the fragile option when verbatim is used in the slide
-\frametitle{Verbatim}
-\begin{example}[Theorem Slide Code]
-\begin{verbatim}
 \begin{frame}
-\frametitle{Theorem}
-\begin{theorem}[Mass--energy equivalence]
-$E = mc^2$
-\end{theorem}
-\end{frame}\end{verbatim}
-\end{example}
+\frametitle{\textbf{State of the art}}
+\begin{figure}
+\includegraphics[scale=0.45]{images/Picture8.png}
+%\caption{WHO global health estimates 2014}
+\end{figure}
 \end{frame}
 
-%------------------------------------------------
+\begin{frame}
+\frametitle{\textbf{Available drugs and their side effects}}
+\begin{figure}
+\includegraphics[scale=0.42]{images/Picture9.png}
+%\caption{WHO global health estimates 2014}
+\end{figure}
+\end{frame}
 
 \begin{frame}
-\frametitle{Figure}
-Uncomment the code on this slide to include your own image from the same directory as the template .TeX file.
+\frametitle{\textbf{Research gaps}}
+\begin{figure}
+\includegraphics[scale=0.45]{images/Picture10.png}
+%\caption{WHO global health estimates 2014}
+\end{figure}
+\end{frame}
+
+\section{Study plan}
+
+\begin{frame}
+\begin{block}
+\Huge{\centerline{Study plan}}
+\end{block}
+\end{frame}
+
+\begin{frame}
+\frametitle{\textbf{Work plan}}
+\begin{figure}
+\includegraphics[scale=0.40]{images/Picture11.png}
+%\caption{WHO global health estimates 2014}
+\end{figure}
+\end{frame}
+
+
+\section{Project 1}
+
+\begin{frame}
+\begin{block}
+\Huge{\centerline{Project 1}}
+\end{block}
+\end{frame}
+
+\begin{frame}
+\frametitle{\textbf{Work plan}}
+\begin{figure}
+\includegraphics[scale=0.38]{images/Picture12.png}
+%\caption{WHO global health estimates 2014}
+\end{figure}
+\end{frame}
+
+\begin{frame}
+\frametitle{\textbf{Biological significance and role of sEH}}
+\begin{figure}
+\includegraphics[scale=0.50]{images/Picture13.png}
+%\caption{WHO global health estimates 2014}
+\end{figure}
+\end{frame}
+
+\begin{frame}
+\frametitle{\textbf{Workflow}}
+\begin{figure}
+\includegraphics[scale=0.50]{images/Picture14.png}
+%\caption{WHO global health estimates 2014}
+\end{figure}
+\end{frame}
+
+\begin{frame}
+\frametitle{\textbf{Ligand-based Pharmacophore hypotheses}}
+\begin{figure}
+\includegraphics[scale=0.50]{images/Picture15.png}
+\caption{A. model 1(ADH) B. model 2(ADHH)  and C. model 3(AADHH)}
+\end{figure}
+\end{frame}
+
+\begin{frame}
+\frametitle{\textbf{Statistical parameters of test set validation}}
+\begin{figure}
+\includegraphics[scale=0.4]{images/Picture16.png}
+%\caption{WHO global health estimates 2014}
+\begin{itemize}
+\item Model 2 (ADHH) was used to screen the maybridge chemical database and 1802 hits were retrieved.
+\item These hits were docked into the binding pocket of sEH.
+\end{itemize}
+\end{figure}
+\end{frame}
+
+\begin{frame}
+\frametitle{\textbf{Molecular docking (sEH-AUB)}}
+%\begin{columns}[c] 
+%\column{.5\textwidth} % Left column and width
+\begin{figure}
+\includegraphics[width=\textwidth]{images/Picture20.png}
+\caption{(A) Molecular docking interactions 2D view (B) 3D view of docking pose within the binding pocket of sEH}
+\end{figure}
+\begin{itemize}
+\item Catalytic triad residues- Tyr383, Tyr466, and Asp335
+%\item whetever
+\end{itemize}
+%\column{.5\textwidth} % Right column and width
 %\begin{figure}
-%\includegraphics[width=0.8\linewidth]{test}
+%\includegraphics[width=\textwidth]{images/Picture21.png}
+%\caption{\tiny(B) 3D view of docking pose within the binding pocket of sEH}
 %\end{figure}
+%\end{columns}
 \end{frame}
+
+\begin{frame}
+\frametitle{\textbf{Molecular docking interactions 2D view (active compounds)}}
+\begin{columns}[c] 
+\column{.35\textwidth} % Left column and width
+\begin{figure}
+\includegraphics[width=\textwidth]{images/Picture22.png}
+\caption{HTS07656}
+\end{figure}
+%\begin{itemize}
+%\item whetever 
+%\item whetever
+%\end{itemize}
+\column{.35\textwidth} % Right column and width
+\begin{figure}
+\includegraphics[width=\textwidth]{images/Picture23.png}
+\caption{CD11292}
+\end{figure}
+%\begin{itemize}
+%\item whetever 
+%\item whetever
+%\end{itemize}
+\column{.35\textwidth} % Right column and width
+\begin{figure}
+\includegraphics[width=\textwidth]{images/Picture24.png}
+\caption{BTB04690}
+\end{figure}
+\end{columns}
+\textbf{\emph{Note}}: Purple arrow$\rightarrow$ H-bond, green line$\rightarrow$ $\pi$-$\pi$ stacking interaction.
+\end{frame}
+
+\begin{frame}
+\frametitle{\textbf{Molecular docking  interactions 3D view (active compounds)}}
+\begin{columns}[c] 
+\column{.34\textwidth} % Left column and width
+\begin{figure}
+\includegraphics[width=\textwidth]{images/Picture25.png}
+\caption{HTS07656}
+\end{figure}
+%\begin{itemize}
+%\item whetever 
+%\item whetever
+%\end{itemize}
+\column{.34\textwidth} % Right column and width
+\begin{figure}
+\includegraphics[width=\textwidth]{images/Picture26.png}
+\caption{CD11292}
+\end{figure}
+%\begin{itemize}
+%\item whetever 
+%\item whetever
+%\end{itemize}
+\column{.34\textwidth} % Right column and width
+\begin{figure}
+\includegraphics[width=\textwidth]{images/Picture27.png}
+\caption{BTB04690}
+\end{figure}
+\end{columns}
+\textbf{\emph{Note}}: Purple dash$\rightarrow$H-bond, green dash $\rightarrow$ $\pi$-$\pi$ stacking interaction, cyan dash$\rightarrow$aromatic H-bond.
+\end{frame}
+
+\begin{frame}
+\frametitle{\textbf{Compounds subjected to biological assay}}
+\begin{figure}
+\includegraphics[scale=0.4]{images/Picture17.png}
+%\caption{WHO global health estimates 2014}
+\begin{itemize}
+\item Molecular interactions were analysed for top 100 compounds and nine compounds were selected for biological assay.
+\end{itemize}
+\end{figure}
+\end{frame}
+
+\begin{frame}
+\frametitle{\textbf{Biological assay}}
+\begin{columns}[c] 
+\column{.5\textwidth} % Left column and width
+\begin{figure}
+\includegraphics[width=\textwidth]{images/Picture18.png}
+\caption{\tiny(A) Percentage inhibition at 25$\mu$M concentration}
+\end{figure}
+%\begin{itemize}
+%\item whetever 
+%\item whetever
+%\end{itemize}
+\column{.5\textwidth} % Right column and width
+\begin{figure}
+\includegraphics[width=\textwidth]{images/Picture19.png}
+\caption{\tiny(B) Percentage inhibition at 5$\mu$M concentration}
+\end{figure}
+\end{columns}
+\end{frame}
+
+\begin{frame}
+\frametitle{\textbf{Molecular dynamics simulation}}
+%\begin{columns}[c] 
+%\column{.5\textwidth} % Left column and width
+\begin{figure}
+\includegraphics[width=\textwidth]{images/Picture28.png}
+\caption{(A) Ligand RMSD (B) Protein backbone RMSD}
+\end{figure}
+%\begin{itemize}
+%\item whetever 
+%\item whetever
+%\end{itemize}
+%\column{.5\textwidth} % Right column and width
+%\begin{figure}
+%\includegraphics[width=\textwidth]{images/Picture29.png}
+%\caption{Protein backbone RMSD}
+%\end{figure}
+%\end{columns}
+\end{frame}
+
+\begin{frame}
+\frametitle{\textbf{Molecular dynamics simulation}}
+%\begin{columns}[c] 
+%\column{.5\textwidth} % Left column and width
+\begin{figure}
+\includegraphics[width=\textwidth]{images/Picture30.png}
+\caption{(A) Root Mean square Fluctuation (RMSF) (B) Interaction energy}
+\end{figure}
+%\begin{itemize}
+%\item whetever 
+%\item whetever
+%\end{itemize}
+%\column{.5\textwidth} % Right column and width
+%\begin{figure}
+%\includegraphics[width=\textwidth]{images/Picture31.png}
+%\caption{(B)Interaction energy}
+%\end{figure}
+%\end{columns}
+\end{frame}
+
+\begin{frame}
+\frametitle{\textbf{Molecular dynamics simulation}}
+\begin{figure}
+\includegraphics[scale=0.40]{images/Picture32.png}
+\caption{Number of hydrogen bonds (A) AUB, (B) HTS07656, (C) HTS07656, (D) HTS07656}
+\end{figure}
+\end{frame}
+
+\begin{frame}
+\frametitle{\textbf{Conclusion and future studies}}
+\begin{itemize}
+\item Identified novel inhibitors of human sEH protein.
+\item An efficient and cost-effective virtual screening protocol and a four-feature pharmacophore.
+\item Five compound showed significant inhibition at 25$\mu$M concentration.
+\item Two compounds HTS07656 and CD11292 showed inhibition with IC50$<$5$\mu$M.
+\item These compounds can serve as a robust platform for carrying out more rational modification and structure-activity relationship studies.
+\item In-vivo studies and toxicology studies can be performed for these compounds.
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{\textbf{Publication}}
+\begin{figure}
+\includegraphics[scale=0.36]{images/Picture33.png}
+%\caption{WHO global health estimates 2014}
+\end{figure}
+\end{frame}
+
+\section{Project 2}
+
+\begin{frame}
+\begin{block}
+\Huge{\centerline{Project 2}}
+\end{block}
+\end{frame}
+
+\begin{frame}
+\frametitle{\textbf{Work plan}}
+\begin{figure}
+\includegraphics[scale=0.38]{images/Picture34.png}
+%\caption{WHO global health estimates 2014}
+\end{figure}
+\end{frame}
+
+\begin{frame}
+\frametitle{\textbf{Biological role of cathepsin S}}
+\begin{figure}
+\includegraphics[scale=0.45]{images/Picture34b.png}
+%\caption{WHO global health estimates 2014}
+\end{figure}
+\end{frame}
+
+\begin{frame}
+\frametitle{\textbf{Workflow}}
+\begin{figure}
+\includegraphics[scale=0.45]{images/Picture35.png}
+%\caption{WHO global health estimates 2014}
+\end{figure}
+\end{frame}
+
+\begin{frame}
+\frametitle{\textbf{Compounds used to generate pharmacophore model}}
+\begin{figure}
+\includegraphics[scale=0.45]{images/Picture36.png}
+%\caption{WHO global health estimates 2014}
+\end{figure}
+\end{frame}
+
+\begin{frame}
+\frametitle{\textbf{Important interacting residues of reference compounds}}
+\begin{figure}
+\includegraphics[scale=0.4]{images/Picture37.png}
+%\caption{WHO global health estimates 2014}
+\end{figure}
+\begin{itemize}
+\item Important residues for interactions: \textbf{Gln19} (S1’ pocket), \textbf{Cys25}, \textbf{Asn163}, \textbf{His164}, and Asn184 (S1 pocket) and Phe70, Met71, Gly137, Val162, Gly165, and Phe211 (S2 pocket).
+%\item whetever
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{\textbf{Pharmacophore hypothesis}}
+\begin{figure}
+\includegraphics[scale=0.42]{images/Picture38.png}
+\caption{(A) Structure of RO5444101 (B) Pharmacophore mapped over RO5444101}
+\end{figure}
+\begin{itemize}
+\item This hypothesis was used to screen Maybridge chemical database.
+\item 407 hits were identified from virtual screening.
+\item These hits were subjected to molecular docking.
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{\textbf{Molecular docking}}
+\begin{figure}
+\includegraphics[scale=0.4]{images/Picture39.png}
+%\caption{WHO global health estimates 2014}
+\begin{itemize}
+\item These compounds were selected for biological assay.
+\end{itemize}
+\end{figure}
+\end{frame}
+
+\begin{frame}
+\frametitle{\textbf{Molecular docking of active compound (KM07987)}}
+\begin{figure}
+\includegraphics[scale=0.38]{images/Picture40.png}
+\caption{(A) 2D plot illustrating important interactions with CatS (B) 3D view of the compound (green) within the binding pocket}
+\end{figure}
+\begin{itemize}
+\item {\small Important residues for interactions: \textbf{Gln19} (S1’ pocket), \textbf{Cys25}, \textbf{Asn163}, \textbf{His164}, and Asn184 (S1 pocket) and Phe70, Met71, Gly137, Val162, Gly165, and Phe211 (S2 pocket)}.
+%\item whetever
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{\textbf{Biological assay}}
+\begin{figure}
+\includegraphics[scale=0.35]{images/Picture41.png}
+\caption{(A) Inhibition at 25$\mu$M (B) Inhibition by KM07987 at varied concentration}
+\end{figure}
+\end{frame}
+
+%\begin{frame}
+%\frametitle{\textbf{Similarity index (Jaccard/Tanimoto coefficient)}}
+%\begin{figure}
+%\includegraphics[scale=0.40]{images/Picture42.png}
+%%\caption{WHO global health estimates 2014}
+%\end{figure}
+%\begin{itemize}
+%\item JC measures the similarity between two sets, and its value ranges from 0 to 1.
+%\item The value of 0 shows complete dissimilarity, and 1 shows the perfect similarity.
+%\end{itemize}
+%\end{frame}
+
+\begin{frame}
+\frametitle{\textbf{Molecular dynamics simulation}}
+\begin{figure}
+\includegraphics[scale=0.40]{images/Picture43.png}
+\caption{(A) Ligand RMSD (B) Protein backbone RMSD}
+\end{figure}
+\end{frame}
+
+\begin{frame}
+\frametitle{\textbf{Molecular dynamics simulation}}
+\begin{figure}
+\includegraphics[scale=0.40]{images/Picture44.png}
+\caption{(A) Number of hydrogen bonds in RO5444101 (B) Percentage occupancy of H-bonds in RO5444101 (C) Number of hydrogen bonds in KM07987 (D) Percentage occupancy of H-bonds in KM07987}
+\end{figure}
+\end{frame}
+
+%\begin{frame}
+%\frametitle{\textbf{Binding energy calculation}}
+%\begin{figure}
+%\includegraphics[scale=0.50]{images/Picture45.png}
+%%\caption{WHO global health estimates 2014}
+%\end{figure}
+%\end{frame}
+%
+%\begin{frame}
+%\frametitle{\textbf{Binding energy calculation}}
+%\begin{figure}
+%\includegraphics[scale=0.43]{images/Picture46.png}
+%\caption{Binding energy contribution of each residue of CatS (A) RO5444101 (B) KM07987}
+%\end{figure}
+%\end{frame}
+
+\begin{frame}
+\frametitle{\textbf{Conclusion and future studies}}
+\begin{itemize}
+\item Identified a novel inhibitor of human CatS protein.
+\item This study illustrate the efficacy of pharmacophore-based virtual screening for the identification of CatS inhibitors.
+\item KM07987 compound showed inhibition with the IC50$<$5$\mu$M.
+\item It can be further optimized through structural modifications to gain better inhibition against CatS.
+\item In-vivo studies and toxicology studies can be performed for this compound.
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{\textbf{Publication}}
+\begin{figure}
+\includegraphics[scale=0.36]{images/Picture47.png}
+%\caption{WHO global health estimates 2014}
+\end{figure}
+\end{frame}
+
+
+\section{Project 3}
+
+\begin{frame}
+\begin{block}
+\Huge{\centerline{Project 3}}
+\end{block}
+\end{frame}
+
+\begin{frame}
+\frametitle{\textbf{Work plan}}
+\begin{figure}
+\includegraphics[scale=0.38]{images/Picture48.png}
+%\caption{WHO global health estimates 2014}
+\end{figure}
+\end{frame}
+
+\begin{frame}
+\frametitle{\textbf{Biological role of renin in RAS pathway}}
+\begin{figure}
+\includegraphics[scale=0.50]{images/Picture49.png}
+%\caption{WHO global health estimates 2014}
+\end{figure}
+\end{frame}
+
+\begin{frame}
+\frametitle{\textbf{Workflow}}
+\begin{figure}
+\includegraphics[scale=0.35]{images/Picture50.png}
+%\caption{WHO global health estimates 2014}
+\end{figure}
+\end{frame}
+
+\begin{frame}
+\frametitle{\textbf{Neural network architecture}}
+\begin{figure}
+\includegraphics[scale=0.50]{images/Picture51.png}
+%\caption{WHO global health estimates 2014}
+\end{figure}
+\end{frame}
+
+\begin{frame}
+\frametitle{\textbf{Classification model validation on test dataset}}
+\begin{figure}
+\includegraphics[scale=0.42]{images/Picture52.png}
+%\caption{WHO global health estimates 2014}
+\end{figure}
+\end{frame}
+
+\begin{frame}
+\frametitle{\textbf{Classification model validation on test dataset}}
+\begin{figure}
+\includegraphics[scale=0.38]{images/Picture53.png}
+\caption{(A) The ROC curve of the model on the test set (B) The PRC curve of the model on the test set}
+\end{figure}
+\begin{itemize}
+\item This model was used to screen maybridge chemical database.
+\item 7196 hits were classified as actives by this classification model.
+\item These hits were used as input to DNN-QSAR model.
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{\textbf{Neural network architecture}}
+\begin{figure}
+\includegraphics[scale=0.50]{images/Picture54.png}
+%\caption{WHO global health estimates 2014}
+\end{figure}
+\end{frame}
+
+\begin{frame}
+\frametitle{\textbf{Regression model validation}}
+\begin{figure}
+\includegraphics[scale=0.42]{images/Picture55.png}
+\caption{Scatter plots between experimental pIC50 and predicted pIC50 (A) For 648 test set compounds. (B) For 1944 training set compounds}
+\end{figure}
+\end{frame}
+
+\begin{frame}
+\frametitle{\textbf{Regression model validation}}
+\begin{figure}
+\includegraphics[scale=0.36]{images/Picture56.png}
+\caption{Converging the regression model on the test set at (A) Epoch 1 (B) Epoch 10 and, (C) Epoch 45}
+\end{figure}
+\end{frame}
+
+\begin{frame}
+\frametitle{\textbf{Regression model validation}}
+\begin{figure}
+\includegraphics[scale=0.42]{images/Picture57.png}
+\caption{Experimental pIC50 vs. predicted pIC50 for test set compounds}
+\end{figure}
+\end{frame}
+
+\begin{frame}
+\frametitle{\textbf{Regression model validation (Experimental pIC50 vs. predicted pIC50)}}
+\begin{figure}
+\includegraphics[scale=0.40]{images/Picture58.png}
+%\caption{WHO global health estimates 2014}
+\end{figure}
+\begin{itemize}
+\item This DNN-QSAR model was used to predict pIC50 values for 7196 hits.
+%\item pIC50 values were sorted in decreasing order and top 500 compounds were selected for molecular docking.
+%\item Aliskiren was also docked with renin for comparative analysis.
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{\textbf{Aliskiren docked in the binding pocket of renin}}
+\begin{figure}
+\includegraphics[scale=0.40]{images/Picture59.png}
+\caption{(A) 2D view of interactions (B) 3D view of interactions with residues of the binding pocket}
+\begin{itemize}
+\item Important residues for interaction- Asp32, Asp215, Ser219, Arg74, Tyr75, Ser76 etc.
+\end{itemize}
+\end{figure}
+\end{frame}
+
+\begin{frame}
+\frametitle{\textbf{Molecular docking}}
+\begin{columns}[c] 
+\column{.5\textwidth} % Left column and width
+\begin{figure}
+\includegraphics[width=\textwidth]{images/Picture60a.png}
+\caption{RJC03502}
+\end{figure}
+\column{.5\textwidth} % Right column and width
+\begin{figure}
+\includegraphics[scale=0.4]{images/Picture60b.png}
+\caption{SEW04046}
+\end{figure}
+\end{columns}
+\end{frame}
+
+\begin{frame}
+\frametitle{\textbf{Molecular docking}}
+\begin{columns}[c] 
+\column{.5\textwidth} % Left column and width
+\begin{figure}
+\includegraphics[scale=0.4]{images/Picture61a.png}
+\caption{RJC03497}
+\end{figure}
+\column{.5\textwidth} % Right column and width
+\begin{figure}
+\includegraphics[scale=0.4]{images/Picture61b.png}
+\caption{JFD03561}
+\end{figure}
+\end{columns}
+\end{frame}
+
+\begin{frame}
+\frametitle{\textbf{Molecular docking}}
+\begin{columns}[c] 
+\column{.5\textwidth} % Left column and width
+\begin{figure}
+\includegraphics[scale=0.4]{images/Picture62a.png}
+\caption{JFD01243}
+\end{figure}
+\column{.5\textwidth} % Right column and width
+\begin{figure}
+\includegraphics[scale=0.4]{images/Picture62b.png}
+\caption{JFD03558}
+\end{figure}
+\end{columns}
+\end{frame}
+
+\begin{frame}
+\frametitle{\textbf{Selected compounds for molecular dynamics simulation}}
+\begin{figure}
+\includegraphics[scale=0.40]{images/Picture63.png}
+%\caption{WHO global health estimates 2014}
+\end{figure}
+\end{frame}
+
+\begin{frame}
+\frametitle{\textbf{Molecular dynamics simulation}}
+\begin{figure}
+\includegraphics[scale=0.38]{images/Picture64.png}
+\caption{(A) Ligand RMSD (B) RMSD of the protein backbone}
+\end{figure}
+\end{frame}
+
+\begin{frame}
+\frametitle{\textbf{Molecular dynamics simulation}}
+\begin{figure}
+\includegraphics[scale=0.45]{images/Picture65.png}
+\caption{Percentage occupancy of predicted hydrogen bonds for all selected compounds}
+\end{figure}
+\begin{itemize}
+\item Residues with high percentage occupancy- Asp32, Asp215, Arg74 and Ser76.
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{\textbf{Conclusion and future studies}}
+\begin{itemize}
+\item Six hit compounds identified with the predicted IC50 values ranging from 24.2 nM to 83.6 nM.
+\item These potential hits can be served as renin inhibitors.
+\item These compounds can be further analyzed for in-vitro and in-vivo studies to confirm their inhibition potential.
+\item Lead optimization chemistry can be done for identified compounds.
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{\textbf{Summary and future work}}
+\begin{itemize}
+\item sEH, cathepsin S and renin proteins have significant role in the pathology of cardiovascular diseases.
+%\item Identified compounds from all the projects increases the chemical space of inhibitors.
+\item Generated pharmocophore models can serve as a robust platform for the identification of more inhibitors.
+\item DNN-classification and DNN-QSAR models can also be used for other target proteins to identify their inhibitors.
+\item The proposed hits offer a starting point, and their activity spectrum can be further improved by the optimisation approaches.
+\item The obtained new set of compounds will help in advancing the therapeutic approaches to CVDs.
+\end{itemize}
+\end{frame}
+
+%\section{Acknowledgement}
+
+\begin{frame}
+\frametitle{\textbf{Acknowledgement}}
+\begin{itemize}
+\item Supervisor - Dr. Mohammad Imran Siddiqi
+\item Examiners of thesis
+\item Directors of CDRI
+\item Collaborators - Dr. Shakil Ahmed and Dr. Dibyendu Benarjee
+\item DAC members - Dr. J V Pratap and Dr. Kashif Hanif
+\item Head of MSB division and all other scientists
+\item All lab members, CDRI family and friends
+\end{itemize}
+\end{frame}
+
+%\section{Publications}
+
+%\begin{frame}
+%\frametitle{\textbf{List of Publications}}
+%\begin{itemize}
+%\item \textbf{Bhagwati, S.} and Siddiqi, M.I., 2019. Identification of Potential Soluble Epoxide Hydrolase (sEH) Inhibitors by Ligand-Based Pharmacophore Model and Biological Evaluation. \textit{Journal of Biomolecular Structure and Dynamics, pp.1-19}.
+%\item Ahmad, S.,{\textbf{Bhagwati, S.}, Kumar, S., Banerjee, D. and Siddiqi, M.I., 2020. Molecular Modeling Assisted Identification and Biological Evaluation of Potent Cathepsin S Inhibitors. \textit{Journal of Molecular Graphics and Modelling, 96, p.107512} \textbf{(joint first author)}}.
+%\item \textbf{Bhagwati, S}. and Siddiqi, M.I., Deep Neural Network Modeling based Virtual Screening and Prediction of Potential Inhibitors for Renin Protein \textbf{(under communication)}.
+%\item Kushwaha, P., Fatima, S., Upadhyay, A., Gupta, S., \textbf{Bhagwati, S.}, Baghel, T., Siddiqi, M.I., Nazir, A. and Sashidhara, K.V., 2019. Synthesis, biological evaluation and molecular dynamic simulations of novel Benzofuran-tetrazole derivatives as potential agents against Alzheimer’s disease. \textit{Bioorganic \& medicinal chemistry letters, 29(1), pp.66-72}.
+%\end{itemize}
+%\end{frame}
+
+\begin{frame}
+\frametitle{\textbf{List of Publications}}
+\tiny
+\begin{itemize}
+\item \textbf{Bhagwati, S.} and Siddiqi, M.I., 2019. Identification of Potential Soluble Epoxide Hydrolase (sEH) Inhibitors by Ligand-Based Pharmacophore Model and Biological Evaluation. \textit{Journal of Biomolecular Structure and Dynamics, pp.1-19}.
+\item Ahmad, S.,{\textbf{Bhagwati, S.}, Kumar, S., Banerjee, D. and Siddiqi, M.I., 2020. Molecular Modeling Assisted Identification and Biological Evaluation of Potent Cathepsin S Inhibitors. \textit{Journal of Molecular Graphics and Modelling, 96, p.107512} \textbf{(joint first author)}}.
+\item \textbf{Bhagwati, S}. and Siddiqi, M.I., Deep Neural Network Modeling based Virtual Screening and Prediction of Potential Inhibitors for Renin Protein \textbf{(under communication)}.
+\item Kushwaha, P., Fatima, S., Upadhyay, A., Gupta, S., \textbf{Bhagwati, S.}, Baghel, T., Siddiqi, M.I., Nazir, A. and Sashidhara, K.V., 2019. Synthesis, biological evaluation and molecular dynamic simulations of novel Benzofuran-tetrazole derivatives as potential agents against Alzheimer’s disease. \textit{Bioorganic \& medicinal chemistry letters, 29(1), pp.66-72}.
+\item Mittal, M., \textbf{Bhagwati, S.}, Siddiqi, M.I., Chattopadhyay, N. A Critical assessment of the potential of pharmacological modulation of aldehyde dehydrogenases to treat the diseases of bone loss \textbf{(under review)}.
+\item Porwal, K., Pal, S., \textbf{Bhagwati, S.}, Siddiqi, M.I., Chattopadhyay, N. Therapeutic potential of phosphodiesterase inhibitors in the treatment of osteoporosis: scopes for therapeutic repurposing and discovery of new oral osteoanabolic drugs \textbf{(under review)}.
+\item Kushwaha, P., Shamsuzzama, Upadhyay, A., Kumar, L., Gupta, S., \textbf{Bhagwati, S.}, Siddiqi, M.I., Nazir, A., Sashidhara, K.V., Novel Benzofuran-Dihydropyrimidinone Hybrids as Potent Multitarget-Directed Ligands for the Treatment of Alzheimer’s Disease \textbf{(under review)}.
+\item Gupta, S., Kumar, L., Singh, L.R., Shamsuzzama, Kushwaha, P., \textbf{Bhagwati, S.}, Siddiqi, M.I., Nazir, A., Sashidhara, K.V., Synthesis and biological evaluation of multifunctional tacrine-triazole hybrids as potential candidates for the treatment of Alzheimer’s disease \textbf{(under review)}.
+
+\end{itemize}
+\end{frame}
+
+
+\section{Conclusion \& future work}
+
+
+
+
+
+%----------------------------------------------------------------------------------------
+%	PRESENTATION SLIDES STOP
+%----------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+%%------------------------------------------------
+%\section{Introduction} % Sections can be created in order to organize your presentation into discrete blocks, all sections and subsections are automatically printed in the table of contents as an overview of the talk
+%%------------------------------------------------
+%
+%%\subsection{subsection} % A subsection can be created just before a set of slides with a common theme to further break down your presentation into chunks
+%
+%\begin{frame}
+%\frametitle{Paragraphs of Text}
+%\begin{itemize}
+%\item Cardiovascular diseases (CVDs) are disorders of the heart and blood vessels and include coronary heart disease, cerebrovascular disease, rheumatic heart disease and other conditions. 
+%
+%\item An estimated 17.9 million people died from CVDs in 2016, representing 31\% of all global deaths. Of these deaths, 85\% are due to heart attack and stroke.
+%
+%\item Four out of five CVD deaths are due to heart attacks and strokes. Individuals at risk of CVD may demonstrate raised blood pressure, glucose, and lipids as well as overweight and obesity.
+%
+%\item Risk factors- tobacco use, unhealthy diet and obesity, physical inactivity and alcohol consumption.
+%
+%\end{itemize}
+%\end{frame}
+%
+%%------------------------------------------------
+%
+%\begin{frame}
+%\begin{figure}
+%%\includegraphics[scale=0.5]{defence presentation/1.png}
+%\caption{WHO global health estimates 2014}
+%\end{figure}
+%\end{frame}
+%
+%%------------------------------------------------
+%
+%\begin{frame}
+%\frametitle{Bullet Points}
+%\begin{itemize}
+%\item Lorem ipsum dolor sit amet, consectetur adipiscing elit
+%\item Aliquam blandit faucibus nisi, sit amet dapibus enim tempus eu
+%\item Nulla commodo, erat quis gravida posuere, elit lacus lobortis est, quis porttitor odio mauris at libero
+%\item Nam cursus est eget velit posuere pellentesque
+%\item Vestibulum faucibus velit a augue condimentum quis convallis nulla gravida
+%\end{itemize}
+%\end{frame}
+%
+%%------------------------------------------------
+%
+%\begin{frame}
+%\frametitle{Blocks of Highlighted Text}
+%\begin{block}{Block 1}
+%Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lectus nisl, ultricies in feugiat rutrum, porttitor sit amet augue. Aliquam ut tortor mauris. Sed volutpat ante purus, quis accumsan dolor.
+%\end{block}
+%
+%\begin{block}{Block 2}
+%Pellentesque sed tellus purus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vestibulum quis magna at risus dictum tempor eu vitae velit.
+%\end{block}
+%
+%\begin{block}{Block 3}
+%Suspendisse tincidunt sagittis gravida. Curabitur condimentum, enim sed venenatis rutrum, ipsum neque consectetur orci, sed blandit justo nisi ac lacus.
+%\end{block}
+%\end{frame}
+%
+%%------------------------------------------------
+%
+%\begin{frame}
+%\frametitle{Multiple Columns}
+%\begin{columns}[c] % The "c" option specifies centered vertical alignment while the "t" option is used for top vertical alignment
+%
+%\column{.45\textwidth} % Left column and width
+%\textbf{Heading}
+%\begin{enumerate}
+%\item Statement
+%\item Explanation
+%\item Example
+%\end{enumerate}
+%
+%\column{.5\textwidth} % Right column and width
+%Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lectus nisl, ultricies in feugiat rutrum, porttitor sit amet augue. Aliquam ut tortor mauris. Sed volutpat ante purus, quis accumsan dolor.
+%
+%\end{columns}
+%\end{frame}
+%
+%%------------------------------------------------
+%\section{State of art}
+%%------------------------------------------------
+%
+%%------------------------------------------------
+%\section{Methodology}
+%%------------------------------------------------
+%
+%%------------------------------------------------
+%\section{Results}
+%%------------------------------------------------
+%
+%%------------------------------------------------
+%\section{Conclusion}
+%%------------------------------------------------
+%
+%\begin{frame}
+%\frametitle{Table}
+%\begin{table}
+%\begin{tabular}{l l l}
+%\toprule
+%\textbf{Treatments} & \textbf{Response 1} & \textbf{Response 2}\\
+%\midrule
+%Treatment 1 & 0.0003262 & 0.562 \\
+%Treatment 2 & 0.0015681 & 0.910 \\
+%Treatment 3 & 0.0009271 & 0.296 \\
+%\bottomrule
+%\end{tabular}
+%\caption{Table caption}
+%\end{table}
+%\end{frame}
+%
+%%------------------------------------------------
+%
+%\begin{frame}
+%\frametitle{Theorem}
+%\begin{theorem}[Mass--energy equivalence]
+%$E = mc^2$
+%\end{theorem}
+%\end{frame}
+%
+%%------------------------------------------------
+%
+%\begin{frame}[fragile] % Need to use the fragile option when verbatim is used in the slide
+%\frametitle{Verbatim}
+%\begin{example}[Theorem Slide Code]
+%\begin{verbatim}
+%\begin{frame}
+%\frametitle{Theorem}
+%\begin{theorem}[Mass--energy equivalence]
+%$E = mc^2$
+%\end{theorem}
+%\end{frame}\end{verbatim}
+%\end{example}
+%\end{frame}
+%
+%%------------------------------------------------
+%
+%\begin{frame}
+%\frametitle{Figure}
+%Uncomment the code on this slide to include your own image from the same directory as the template .TeX file.
+%%\begin{figure}
+%%\includegraphics[width=0.8\linewidth]{test}
+%%\end{figure}
+%\end{frame}
+%
+%%------------------------------------------------
+%
+%\begin{frame}[fragile] % Need to use the fragile option when verbatim is used in the slide
+%\frametitle{Citation}
+%An example of the \verb|\cite| command to cite within the presentation:\\~
+%
+%This statement requires citation \cite{p1}.
+%\end{frame}
 
 %------------------------------------------------
 
-\begin{frame}[fragile] % Need to use the fragile option when verbatim is used in the slide
-\frametitle{Citation}
-An example of the \verb|\cite| command to cite within the presentation:\\~
-
-This statement requires citation \cite{p1}.
-\end{frame}
+%\begin{frame}
+%\frametitle{References}
+%\footnotesize{
+%\begin{thebibliography}{99} % Beamer does not support BibTeX so references must be inserted manually as below
+%\bibitem[Smith, 2012]{p1} John Smith (2012)
+%\newblock Title of the publication
+%\newblock \emph{Journal Name} 12(3), 45 -- 678.
+%\end{thebibliography}
+%}
+%\end{frame}
 
 %------------------------------------------------
 
 \begin{frame}
-\frametitle{References}
-\footnotesize{
-\begin{thebibliography}{99} % Beamer does not support BibTeX so references must be inserted manually as below
-\bibitem[Smith, 2012]{p1} John Smith (2012)
-\newblock Title of the publication
-\newblock \emph{Journal Name} 12(3), 45 -- 678.
-\end{thebibliography}
-}
-\end{frame}
-
-%------------------------------------------------
-
-\begin{frame}
-\Huge{\centerline{The End}}
+\Huge{\centerline{Thank You}}
 \end{frame}
 
 %----------------------------------------------------------------------------------------
